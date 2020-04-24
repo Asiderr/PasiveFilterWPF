@@ -5,8 +5,131 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NorbertKaminskiFiltrPasywnyRLC"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Pasive Filter - Norbert Kamiński - 2020"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Grid Name="Base">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="75*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="152*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="155*"/>
+            <ColumnDefinition Width="54*"/>
+            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="54*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!-- Grid colors -->
+        <Border Grid.Column="0" Grid.Row="0" Background="#232645" BorderBrush="#61626b"/>
+        <Border Grid.Column="0" Grid.Row="1" Background="#353853" Grid.RowSpan="3"/>
+        <Border Grid.Column="0" Grid.Row="4" Background="#353853" Grid.RowSpan="3"/>
+        <Border Grid.Column="0" Grid.Row="7" Background="#353853" Grid.RowSpan="2"/>
+        <Border Grid.Column="0" Grid.Row="9" Background="#353853" Grid.RowSpan="2"/>
+        <Border Grid.Column="1" Grid.Row="0" Background="#232645" Grid.ColumnSpan="9"/>
+        <Border Grid.Column="1" Grid.Row="2" Grid.RowSpan="8" Grid.ColumnSpan="9">
+            <Border.Background>
+                <ImageBrush ImageSource="schema.JPG"/>
+            </Border.Background>
+        </Border>
+
+        <!-- Header -->
+        <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource TextBoarder}">
+            <TextBlock Text="Norbert Kaminski - 161124"
+                       Style="{StaticResource Author}"/>
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource TextBoarder}" Grid.ColumnSpan="9">
+            <TextBlock Text="Pasive Filter RLC"
+                   Style="{StaticResource TitleBar}"/>
+        </Border>
+
+        <!-- Schematic button-->
+        <Button Name="Schematic" Content="Schematic" FontSize="50"
+                Style="{StaticResource LeftMenuButton}"
+                Click="Schematic_Click"
+                Grid.Column="0" Grid.Row="1" Grid.RowSpan="3">
+            <!-- Mouseover color change -->
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!-- Draw Waveforms button-->
+        <Button Name="DrawWaveforms" Content="Draw Waveforms" FontSize="50"
+                Style="{StaticResource LeftMenuButton}"
+                Click="DrawWaveforms_Click"
+                Grid.Column="0" Grid.Row="4" Grid.RowSpan="3">
+            <!-- Mouseover color change -->
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!-- About button-->
+        <Button Name="About" Content="About" FontSize="50"
+                Style="{StaticResource LeftMenuButton}"
+                Click="About_Click"
+                Grid.Column="0" Grid.Row="7" Grid.RowSpan="2">
+            <!-- Mouseover color change -->
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!-- Exit -->
+        <Button Name="Exit" Content="Exit" FontSize="50"
+                Style="{StaticResource LeftMenuButton}"
+                Click="Exit_Click"
+                Grid.Column="0" Grid.Row="9" Grid.RowSpan="2">
+            <!-- Mouseover color change -->
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+
+
     </Grid>
 </Window>

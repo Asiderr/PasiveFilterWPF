@@ -4,6 +4,47 @@
              xmlns:local="clr-namespace:NorbertKaminskiFiltrPasywnyRLC"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <!-- Left Menu Buttons -->
+        <Style x:Key="LeftMenuButton" TargetType="{x:Type Button}">
+            <Setter Property="BorderBrush" Value="#61626b"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontFamily" Value="Agency FB" />
+            <Setter Property="Foreground" Value="#d7d8de" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#232645" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#141c4a" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Text Border -->
+        <Style x:Key="TextBoarder" TargetType="{x:Type Border}">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="#61626b" />
+        </Style>
+
+        <!-- Author -->
+        <Style x:Key="Author" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Agency FB" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="#d7d8de"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="40"/>
+        </Style>
+
+        <!-- Title Bar -->
+        <Style x:Key="TitleBar" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Agency FB" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="#d7d8de"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="60"/>
+        </Style>
     </Application.Resources>
 </Application>

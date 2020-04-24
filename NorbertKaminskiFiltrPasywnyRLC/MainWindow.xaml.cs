@@ -24,5 +24,25 @@ namespace NorbertKaminskiFiltrPasywnyRLC
         {
             InitializeComponent();
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Schematic_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DrawWaveforms_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
