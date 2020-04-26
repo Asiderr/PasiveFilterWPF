@@ -46,5 +46,83 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="FontSize" Value="60"/>
         </Style>
+        
+        <!-- Schematic Header Text -->
+        <Style x:Key="SchematicHeader" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Agency FB" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="#232645"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="60"/>
+        </Style>
+        
+        <!-- Schematic Element -->
+        <Style x:Key="SchematicElements" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="BorderBrush" Value="#353853" />
+                    <Setter Property="BorderThickness" Value="1" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="BorderBrush" Value="#232645" />
+                    <Setter Property="BorderThickness" Value="1" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="DataInputWindowStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="#353853" />
+            <Setter Property="BorderThickness" Value="7"/>
+        </Style>
+
+        <!-- Window Header Text -->
+        <Style x:Key="DataInputTextStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Agency FB" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="#232645"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="65"/>
+        </Style>
+
+        <Style x:Key="InputBoxesStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="FontFamily" Value="Agency FB" />
+            <Setter Property="FontSize" Value="60"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Style.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3" />
+                </Style>
+            </Style.Resources>
+        </Style>
+
+        <Style x:Key="SaveValueButton" TargetType="{x:Type Button}">
+            <Setter Property="BorderBrush" Value="#61626b"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#353853"/>
+            <Setter Property="FontFamily" Value="Agency FB" />
+            <Setter Property="Foreground" Value="#d7d8de" />
+            <Setter Property="FontSize" Value="45" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#232645" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#141c4a" />
+                </Trigger>
+            </Style.Triggers>            
+        </Style>
+
+        <Style x:Key="SchematicValues" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Agency FB" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="#232645"/>
+            <Setter Property="FontSize" Value="40"/>
+        </Style>
+
     </Application.Resources>
 </Application>
