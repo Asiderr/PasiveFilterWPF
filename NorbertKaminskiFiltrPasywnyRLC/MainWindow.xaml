@@ -64,6 +64,11 @@
             </Border.Background>
         </Border>
 
+        <!-- Chart -->
+        <WindowsFormsHost Name="PhaseAndMagniutdeChart" Grid.Column="1" Grid.Row="2" Grid.RowSpan="12"
+                          Grid.ColumnSpan="20">
+        </WindowsFormsHost>
+
         <!-- Header -->
         <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource TextBoarder}">
             <TextBlock Text="Norbert Kaminski - 161124"
@@ -149,8 +154,8 @@
         </Button>
 
         <!-- Filter elements -->
-        <Button Name="Inductance" 
-                Grid.Column="4" Grid.Row="3" Grid.RowSpan="3" 
+        <Button Name="Inductance"
+                Grid.Column="4" Grid.Row="3" Grid.RowSpan="3"
                 Style="{StaticResource SchematicElements}"
                 Click="Inductance_Click">
             <Button.Template>
@@ -163,8 +168,8 @@
             </Button.Template>
         </Button>
 
-        <Button Name="Capacitance" 
-                Grid.Column="11" Grid.Row="3" Grid.RowSpan="3" 
+        <Button Name="Capacitance"
+                Grid.Column="11" Grid.Row="3" Grid.RowSpan="3"
                 Style="{StaticResource SchematicElements}"
                 Click="Capacitance_Click" Grid.ColumnSpan="3">
             <Button.Template>
@@ -177,8 +182,8 @@
             </Button.Template>
         </Button>
 
-        <Button Name="VoltageOne" 
-                Grid.Column="2" Grid.Row="7" Grid.RowSpan="4" 
+        <Button Name="VoltageOne"
+                Grid.Column="2" Grid.Row="7" Grid.RowSpan="4"
                 Style="{StaticResource SchematicElements}"
                 Click="VoltageOne_Click">
             <Button.Template>
@@ -191,8 +196,8 @@
             </Button.Template>
         </Button>
 
-        <Button Name="ResistanceOne" 
-                Grid.Column="6" Grid.Row="7" Grid.RowSpan="4" 
+        <Button Name="ResistanceOne"
+                Grid.Column="6" Grid.Row="7" Grid.RowSpan="4"
                 Style="{StaticResource SchematicElements}"
                 Click="ResistanceOne_Click" Grid.ColumnSpan="3">
             <Button.Template>
@@ -205,8 +210,8 @@
             </Button.Template>
         </Button>
 
-        <Button Name="ResistanceTwo" 
-                Grid.Column="16" Grid.Row="7" Grid.RowSpan="4" 
+        <Button Name="ResistanceTwo"
+                Grid.Column="16" Grid.Row="7" Grid.RowSpan="4"
                 Style="{StaticResource SchematicElements}"
                 Click="ResistanceTwo_Click">
             <Button.Template>
@@ -225,30 +230,30 @@
                    VerticalAlignment="Bottom" TextAlignment="Center"
                    Style="{StaticResource SchematicValues}"  />
 
-        <TextBlock Name="ShowInductanceValue"  
+        <TextBlock Name="ShowInductanceValue"
                    Grid.Row="2" Grid.Column="4"
                    VerticalAlignment="Bottom" TextAlignment="Center"
                    Style="{StaticResource SchematicValues}" />
 
-        <TextBlock Name="ShowVoltageValue"  
+        <TextBlock Name="ShowVoltageValue"
                    Grid.Row="8" Grid.Column="1" Grid.RowSpan="2"
                    VerticalAlignment="Center" TextAlignment="Right"
                    Style="{StaticResource SchematicValues}" Margin="0,21,0,25" Height="48"/>
 
-        <TextBlock Name="ShowResistanceOneValue"  
-                   Grid.Row="8" Grid.Column="4" 
+        <TextBlock Name="ShowResistanceOneValue"
+                   Grid.Row="8" Grid.Column="4"
                    Grid.RowSpan="2" Grid.ColumnSpan="2"
                    VerticalAlignment="Center" TextAlignment="Right"
                    Style="{StaticResource SchematicValues}" Margin="0,21,0,25" Height="48"/>
 
-        <TextBlock Name="ShowResistanceTwoValue"  
-                   Grid.Row="8" Grid.Column="12" 
+        <TextBlock Name="ShowResistanceTwoValue"
+                   Grid.Row="8" Grid.Column="12"
                    Grid.RowSpan="2" Grid.ColumnSpan="4"
                    VerticalAlignment="Center" TextAlignment="Right"
                    Style="{StaticResource SchematicValues}" Margin="0,21,0,25" Height="48"/>
 
-        <TextBlock Name="ShowVoltageTwo"  
-                   Grid.Row="8" Grid.Column="20" 
+        <TextBlock Name="ShowVoltageTwo"
+                   Grid.Row="8" Grid.Column="20"
                    Grid.RowSpan="2"
                    VerticalAlignment="Center" TextAlignment="Left"
                    Style="{StaticResource SchematicValues}" Margin="0,21,0,25" Height="48"/>
@@ -262,10 +267,10 @@
         <Border Name="DataInputWindow" Grid.Column="3" Grid.Row="2"
                 Grid.ColumnSpan="16" Grid.RowSpan="12"
                 Style="{StaticResource DataInputWindowStyle}"/>
-        <TextBlock Name="DataInputText" 
+        <TextBlock Name="DataInputText"
                    Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="14" Grid.RowSpan="5"
                    Style="{StaticResource DataInputTextStyle}"/>
-        <TextBlock Name="AboutText" 
+        <TextBlock Name="AboutText"
                    Grid.Column="4" Grid.Row="6" Grid.ColumnSpan="14" Grid.RowSpan="5"
                    Style="{StaticResource DataInputTextStyle}"/>
         <TextBlock Name="ElementName"
